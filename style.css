@@ -21,7 +21,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size:45.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
@@ -102,24 +102,24 @@ header {
 
 header {
     font-weight: bolder;
-    color: #666;
+    color:#058554 !important;
 }
 
 header img {
     padding-right: .5rem;
-    color: var(--red);
+    color: var(--yellow);
 }
 
 header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
-    color: #666;
+    color:#058554;
     text-decoration: none;
     
 }
 
 header .navbar a:hover {
-    color: var(--red);
+    color: var(--yellow);
 }
 
 #menu-bar {
@@ -138,17 +138,13 @@ header .navbar a:hover {
     gap: 1.5rem;
     min-height: 100vh;
     align-items: center;
-    background: url(./images/hfnnc1.jpg) no-repeat;
+    background: url(./images/banner3.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     
 }
 
-.home .content {
-    flex: 1 1 40rem;
-    padding-top: 6.5rem;
-    background-color: #05855438;
-}
+
 
 .home .image {
     flex: 1 1 40rem;
@@ -318,6 +314,7 @@ header .navbar a:hover {
 
 .about .row .image img{ 
     width: 100%;
+    height: 600px;
 }
 
 .about .row .content{
