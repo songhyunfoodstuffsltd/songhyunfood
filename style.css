@@ -36,10 +36,23 @@ section {
 }
 .logo
 {
-     width: 300px;
-     height: 100px;
+     width: 180px;
+}
+#image
+{
+ overflow:hidden;
+ clear:both;
 }
 
+#image .image
+{
+ float:left;
+}
+
+.right
+{
+ margin-left:3em;
+}
 .heading {
     text-align: center;
     font-size: 3.5rem;
@@ -245,7 +258,6 @@ header .navbar a:hover {
 
 .menu .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
 }
 
@@ -266,9 +278,12 @@ header .navbar a:hover {
 
 .menu .box-container .box .image img{
     height: 100%;
-    width: 100%;
     border-radius: .5rem;
     object-fit: cover;
+    transition: width 2s;
+}
+.menu .box-container .box .image img:hover{
+   width: 300px;
 }
 
 .menu .box-container .box .image .fa-heart{
