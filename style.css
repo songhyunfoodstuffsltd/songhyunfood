@@ -342,6 +342,23 @@ header .navbar a:hover {
     justify-content: center;
     text-align: center;
 }
+.form form {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 
 .about .row{
     display: flex;
@@ -421,12 +438,12 @@ header .navbar a:hover {
     flex: 1 1 20rem;
 }
 
-.order .row .image img {
+/* .order .row .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: .5rem;
-}
+} */
 
 .order .row form {
     flex: 1 1 50rem;
@@ -473,7 +490,7 @@ header .navbar a:hover {
 }
 .footer .box a:hover {
     text-decoration: none;
-    
+    list-style-type: none;
 }
 .footer .box-container{
     display: grid;
@@ -492,6 +509,14 @@ header .navbar a:hover {
     padding:.5rem 0;
     font-size: 1.5rem;
     color:var(--light-color);
+    background-color: #058554;
+
+}
+.footer .box-container .box {
+    background: none;
+    border: .1rem solid rgba(0,0,0,.0);
+    /* border-radius: .5rem; */
+    box-shadow: var(--box-shadow);
 }
 
 .footer .box-container .box a:hover{
@@ -502,11 +527,11 @@ header .navbar a:hover {
 .footer .credit{
     text-align: center;
     /* border-top: .1rem solid rgba(0,0,0,.1); */
-    font-size: 2rem;
+    font-size: 1rem;
     color:var(--black);
     padding:.5rem;
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
+    /* padding-top: 1.5rem;
+    margin-top: 1.5rem; */
 }
 
 .footer .credit span{
