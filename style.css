@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root {
     --red: #058554;
 }
@@ -30,6 +30,7 @@ html {
 body {
     background: #f7f7f7;
 }
+
 
 section {
     padding: 2rem 9%;
@@ -122,7 +123,9 @@ header img {
     padding-right: .5rem;
     color: var(--yellow);
 }
-
+#top{
+ margin-top:-200px;
+}
 header .navbar a {
     font-size: 2rem;
     margin-left: 2rem;
@@ -136,12 +139,12 @@ header .navbar a:hover {
 }
 
 #menu-bar {
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     color: #666;
     border: .1rem solid #666;
     border-radius: .3rem;
-    padding: .5rem 1.5rem;
+    padding: .3rem .5rem;
     display: none;
 }
 
@@ -149,16 +152,36 @@ header .navbar a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    min-height: 100vh;
+    min-height: 80vh;
     align-items: center;
-    background: url(./images/banner3.jpeg) no-repeat;
+    background: url('images/Korean\ Heritage\ Society.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     
 }
 
-
-
+.text  h2{
+    width:650px;
+    height:200px;
+    /* background-color: yellowgreen; */
+    color: #f0d50c;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    animation: mymove 5s infinite;
+    top: 70px;
+  }
+  
+  #text1 {animation-timing-function: linear;}
+  #text2 {animation-timing-function: ease;}
+  #text3 {animation-timing-function: ease-in;}
+  #text4 {animation-timing-function: ease-out;}
+  #text5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 950px;}
+    to {left: 400px;}
+  }
 .home .image {
     flex: 1 1 40rem;
 }
@@ -265,7 +288,8 @@ header .navbar a:hover {
     background: #fff;
     border:.1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);    
+    box-shadow: var(--box-shadow); 
+    height: 580px;  
 }
 
 .menu .box-container .box .image{
